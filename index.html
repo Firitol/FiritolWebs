@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='UTF-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
+  <title>Software Engineer Portfolio - Home</title>
+  <link rel='stylesheet' href='assets/styles.css'/>
+</head>
+<body>
+  <header>
+    <h2>Professional Software Engineer</h2>
+    <nav><a href='index.html'>Home</a><a href='about.html'>About</a><a href='learn-more.html'>Learn More</a><a href='contact.html'>Contact Me</a></nav>
+    <div id='authPanel'></div>
+  </header>
+  <main>
+    <section class='hero'>
+      <div>
+        <h1>Full Stack Developer • Software Programmer • Software Designer</h1>
+        <p>I build websites, mobile applications, backend services, APIs, cloud systems, UX-focused interfaces, automation tooling, security-minded architectures, and reliable digital products from idea to launch.</p>
+      </div>
+      <div class='card'>
+        <h3>Upload Updates (Photos/Videos)</h3>
+        <form id='uploadForm'>
+          <input id='mediaTitle' placeholder='Update title' required>
+          <input id='mediaFile' type='file' accept='image/*,video/*' required>
+          <button>Upload</button>
+        </form>
+        <p class='small'>You must be signed in to publish updates.</p>
+      </div>
+    </section>
+    <h2>Recent Updates</h2>
+    <section id='updates' class='grid'></section>
+  </main>
+  <script src='js/app.js'></script>
+</body>
+</html>
