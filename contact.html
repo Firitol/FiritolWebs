@@ -1,4 +1,37 @@
-<!doctype html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Contact</title><link rel='stylesheet' href='assets/styles.css'></head><body>
-<header><h2>Professional Software Engineer</h2><nav><a href='index.html'>Home</a><a href='about.html'>About</a><a href='learn-more.html'>Learn More</a><a href='contact.html'>Contact Me</a></nav><div id='authPanel'></div></header>
-<main><section class='card'><h1>Contact Me</h1><p>Clients must register/sign in before sending email inquiry.</p><form id='contactForm'><input id='subject' placeholder='Subject' required><textarea id='message' rows='6' placeholder='Describe your project' required></textarea><button>Send by Email</button></form><p id='contactStatus'></p></section></main>
-<script src='js/app.js'></script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Contact</title>
+  <!-- ✅ Fixed: Added leading slash -->
+  <link rel='stylesheet' href='/assets/styles.css'>
+</head>
+<body>
+<header>
+  <h2>Professional Software Engineer</h2>
+  <nav>
+    <!-- ✅ Fixed: Root-relative links -->
+    <a href='/'>Home</a>
+    <a href='/about.html'>About</a>
+    <a href='/learn-more.html'>Learn More</a>
+    <a href='/contact.html'>Contact Me</a>
+  </nav>
+  <div id='authPanel'></div>
+</header>
+<main>
+  <section class='card'>
+    <h1>Contact Me</h1>
+    <p>Clients must register/sign in before sending email inquiry.</p>
+    <form id='contactForm'>
+      <input id='subject' placeholder='Subject' required>
+      <textarea id='message' rows='6' placeholder='Describe your project' required></textarea>
+      <button>Send by Email</button>
+    </form>
+    <p id='contactStatus'></p>
+  </section>
+</main>
+<!-- ✅ Fixed: Added leading slash -->
+<script src='/js/app.js'></script>
+</body>
+</html>
