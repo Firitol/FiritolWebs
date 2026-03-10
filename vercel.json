@@ -1,5 +1,4 @@
-
-echo '{
+{
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
@@ -7,4 +6,4 @@ echo '{
     { "source": "/learn-more", "destination": "/learn-more.html" }
   ],
   "cleanUrls": true
-}' > vercel.json
+}
